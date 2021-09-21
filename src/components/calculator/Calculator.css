@@ -5,7 +5,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-  gap: 1em 1em;
+  gap: 0.3em 0.3em;
   grid-template-areas:
     'output output output output'
     '. . . .'
@@ -24,6 +24,10 @@
   border-radius: 0.3em;
   font-size: 1.5em;
   font-weight: 700;
+}
+
+.calculator__output::placeholder {
+  color: #e0e0e0;
 }
 
 .calculator__key--zero {
@@ -60,7 +64,7 @@
   }
 
   .calculator__padding {
-    padding: 1.5em;
+    padding: 1.2em;
   }
 }
 
