@@ -1,27 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&family=Space+Mono:ital,wght@0,700;1,400&display=swap');
+
 body {
   margin: 0;
-  font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    'Roboto',
-    'Oxygen',
-    'Ubuntu',
-    'Cantarell',
-    'Fira Sans',
-    'Droid Sans',
-    'Helvetica Neue',
-    sans-serif;
+  font-family: 'Space Mono', monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family:
-    source-code-pro,
-    Menlo,
-    Monaco,
-    Consolas,
-    'Courier New',
-    monospace;
+button {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+input {
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  font-family: 'Space Grotesk', sans-serif;
 }
