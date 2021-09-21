@@ -1,100 +1,160 @@
 import React from 'react';
 import './Calculator.css';
+import calculate from '../../logic/calculate';
 
 class Calculator extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      total: 0,
+      operation: '',
+      next: '',
+    };
   }
 
+  handleClick = (event) => {
+    this.setState((object) => calculate(object, event.target.value));
+  };
+
   render() {
+    const { total, operation, next } = this.state;
     return (
       <section className="calculator">
         <input
+          type="text"
           className="calculator__output calculator__padding"
-          placeholder={0}
+          value={` ${
+            total || operation || next
+              ? `${total || ''} ${operation || ''} ${next || ''}`
+              : '0'
+          }`}
+          disabled
         />
-        <button type="button" className="calculator__key calculator__padding">
-          AC
-        </button>
-        <button
+        <input
+          value="AC"
+          type="button"
+          className="calculator__key calculator__padding"
+          onClick={this.handleClick}
+        />
+
+        <input
+          value="+/-"
           type="button"
           className="calculator__key calculator__key--operator calculator__padding"
-        >
-          +/-
-        </button>
-        <button
+          onClick={this.handleClick}
+        />
+        <input
+          value="%"
           type="button"
           className="calculator__key calculator__key--operator calculator__padding"
-        >
-          %
-        </button>
-        <button
+          onClick={this.handleClick}
+        />
+        <input
+          value="+"
           type="button"
           className="calculator__key calculator__key--operator calculator__padding"
-        >
-          +
-        </button>
-        <button type="button" className="calculator__key calculator__padding">
-          7
-        </button>
-        <button type="button" className="calculator__key calculator__padding">
-          8
-        </button>
-        <button type="button" className="calculator__key calculator__padding">
-          9
-        </button>
-        <button
+          onClick={this.handleClick}
+        />
+        <input
+          value="7"
+          type="button"
+          className="calculator__key calculator__padding"
+          onClick={this.handleClick}
+        />
+        <input
+          value="8"
+          type="button"
+          className="calculator__key calculator__padding"
+          onClick={this.handleClick}
+        />
+        <input
+          value="9"
+          type="button"
+          className="calculator__key calculator__padding"
+          onClick={this.handleClick}
+        />
+        <input
+          value="x"
           type="button"
           className="calculator__key calculator__key--operator calculator__padding"
-        >
-          &times;
-        </button>
-        <button type="button" className="calculator__key calculator__padding">
-          4
-        </button>
-        <button type="button" className="calculator__key calculator__padding">
-          5
-        </button>
-        <button type="button" className="calculator__key calculator__padding">
-          6
-        </button>
-        <button
+          onClick={this.handleClick}
+        />
+
+        <input
+          value="4"
+          type="button"
+          className="calculator__key calculator__padding"
+          onClick={this.handleClick}
+        />
+
+        <input
+          value="5"
+          type="button"
+          className="calculator__key calculator__padding"
+          onClick={this.handleClick}
+        />
+
+        <input
+          value="6"
+          type="button"
+          className="calculator__key calculator__padding"
+          onClick={this.handleClick}
+        />
+
+        <input
+          value="-"
           type="button"
           className="calculator__key calculator__key--operator calculator__padding"
-        >
-          -
-        </button>
-        <button type="button" className="calculator__key calculator__padding">
-          1
-        </button>
-        <button type="button" className="calculator__key calculator__padding">
-          2
-        </button>
-        <button type="button" className="calculator__key calculator__padding">
-          3
-        </button>
-        <button
+          onClick={this.handleClick}
+        />
+
+        <input
+          value="1"
           type="button"
+          className="calculator__key calculator__padding"
+          onClick={this.handleClick}
+        />
+
+        <input
+          value="2"
+          type="button"
+          className="calculator__key calculator__padding"
+          onClick={this.handleClick}
+        />
+
+        <input
+          type="button"
+          className="calculator__key calculator__padding"
+          value="3"
+          onClick={this.handleClick}
+        />
+
+        <input
           className="calculator__key calculator__key--operator calculator__padding"
-        >
-          +
-        </button>
-        <button
+          value="+"
+          type="button"
+          onClick={this.handleClick}
+        />
+        <input
+          value="0"
           type="button"
           className="calculator__key calculator__key--zero calculator__padding"
-        >
-          0
-        </button>
-        <button type="button" className="calculator__key calculator__padding">
-          .
-        </button>
-        <button
+          onClick={this.handleClick}
+        />
+
+        <input
+          value="."
+          type="button"
+          className="calculator__key calculator__padding"
+          onClick={this.handleClick}
+        />
+
+        <input
+          value="="
           type="button"
           className="calculator__key calculator__key--operator calculator__padding"
-        >
-          =
-        </button>
+          onClick={this.handleClick}
+        />
       </section>
     );
   }
