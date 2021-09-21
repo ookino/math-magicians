@@ -16,13 +16,13 @@
 - CSS
 - Javascript
 
-`Libra`
+`Library`
 
 - React
 
 ## 📡 Live Demo
 
-[Link to Live Demo](https://yaseerokino.github.io/javascript-capstone/)
+[Link to Live Demo](https://yaseerokino.github.io/math-magicians/)
 
 ## 🧰 Tools
 
@@ -33,13 +33,22 @@ The following tools help make it easier to run this code.
 
 ## 🔥 Getting Started
 
+### **Setup**
+
+If you have installed git you can clone the code to your machine, or download a ZIP of all the files directly.
+[Download the ZIP from this location](https://github.com/yaseerokino/math-magicians/archive/refs/heads/develop.zip), or run the following [git](https://git-scm.com/downloads) command to clone the files to your machine:
+
+```bash
+git clone https://github.com/yaseerokino/math-magicians.git
+```
+
 ### **Prerequisites**
 
 To run this project you need [Node](https://nodejs.org/en/) and [NPM](https://docs.npmjs.com/about-npm-versions) installed on your local machine
 <br>
 `Note` : When you install Node.js, npm is automatically installed, However, npm is released more frequently than Node.js
 
-### **Prerequisites**
+### **Available Scripts**
 
 In the project directory, you can run:
 
@@ -82,3 +91,11 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 - GitHub: [@yaseerokino](https://github.com/yaseerokino)
 - LinkedIn: [Yaseer Okino](https://linkedin.com/in/yaseerokino)
+
+## 👊🏾 Show your support
+
+Give a ⭐️ if you like this project!
+
+## 📝 License
+
+This project is [MIT](./LICENSE) licensed.
