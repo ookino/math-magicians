@@ -46,7 +46,7 @@ const Calculator = () => {
         onClick={handleClick}
       />
       <input
-        value="+"
+        value="÷"
         type="button"
         className="calculator__key calculator__key--operator calculator__padding"
         onClick={handleClick}
