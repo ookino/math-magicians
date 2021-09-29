@@ -1,7 +1,6 @@
 .calculator {
-  padding: 2em;
-  margin: 10em auto;
   width: 100%;
+  max-width: 700px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -21,7 +20,6 @@
   text-align: right;
   color: #e0e0e0;
   border: none;
-  border-radius: 0.3em;
   font-size: 1.5em;
   font-weight: 700;
 }
@@ -35,7 +33,6 @@
 }
 
 .calculator__key {
-  border-radius: 0.3em;
   font-size: 1em;
   font-weight: 600;
   background: #e0e0e0;
@@ -60,7 +57,6 @@
 
 @media screen and (min-width: 768px) {
   .calculator {
-    width: 70%;
   }
 
   .calculator__padding {
@@ -70,6 +66,5 @@
 
 @media screen and (min-width: 1025px) {
   .calculator {
-    width: 30%;
   }
 }
